@@ -39,3 +39,17 @@ function isEven(number) {
         return false;
     }
 }
+
+function isVowel(input) {
+    if(input === false || input === true || input === undefined){
+        return false
+    } else if(!isNaN(input)){
+        return false;
+    }
+    else if('aeiou'.indexOf( input.toLowerCase() ) !== -1) {
+        return true
+    } else{
+        return false;
+    }
+}
+

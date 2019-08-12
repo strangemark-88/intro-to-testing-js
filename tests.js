@@ -110,5 +110,35 @@ describe('isEven', function() {
     });
 });
 
-
-//      returns false when called without an argument like isEven()
+describe('isVowel', function() {
+    it('should be a defined function', function() {
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should return a boolean no matter what', function() {
+        expect(typeof isVowel()).toBe("boolean");
+    });
+    it('returns true when passed a', function() {
+        expect(isVowel("a")).toBe(true);
+    });
+    it('returns true when passed A', function() {
+        expect(isVowel('A')).toBe(true);
+    });
+    it('returns false when passed y', function() {
+        expect(isVowel('y')).toBe(false);
+    });
+    it('returns false when passed 4', function() {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('returns false when passed "banana', function() {
+        expect(isVowel("banana")).toBe(false);
+    });
+    it('return false when called with a boolean true', function() {
+        expect(isVowel(true)).toBe(false);
+    });
+    it('return false when called with a boolean false', function() {
+        expect(isVowel(false)).toBe(false);
+    });
+    it('returns false when called without an argument', function() {
+        expect(isVowel(undefined)).toBe(false) ;
+    });
+});
