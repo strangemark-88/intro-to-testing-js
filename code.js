@@ -12,3 +12,4 @@ function sum(num1, num2) {
 function sayHello(input) {
     return  "Hello, " + input + '!';
 }
+
