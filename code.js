@@ -1,7 +1,12 @@
 // helloWorld function 
-function helloWorld() {
-    return "Hello, World!";
+function helloWorld(input) {
+    if (input === true){
+        return "Hello, World!";
+    }else {
+        return "Hello, World!";
+    }
 }
+
 function sum(num1, num2) {
     if (num2 === 'sheep'){
         return false;
