@@ -26,3 +26,16 @@ function isFive(input) {
     }
 }
 
+function isEven(number) {
+
+    if(number === false){
+        return false;
+    }
+    else if(number % 2 === 0){
+        return true
+    }
+
+    else{
+        return false;
+    }
+}
