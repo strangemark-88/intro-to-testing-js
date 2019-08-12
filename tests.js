@@ -57,6 +57,19 @@ describe('hello World', function() {
     it('should return Hello World if true', function() {
         expect(helloWorld(false)).toBe("Hello, World!");
     });
-
 });
 
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return Hello World if true', function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it('returns true when passed 5', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('returns false when passed "5"', function() {
+        expect(isFive("5")).toBe(false);
+    });
+});
